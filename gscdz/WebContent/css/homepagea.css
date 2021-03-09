@@ -1,0 +1,171 @@
+@charset "UTF-8";
+ a{
+            text-decoration: none;
+        }
+        body {
+           background: #f5f5f5 !important;
+           font-size: 12px;
+           color: #333;
+           outline: 0;
+           font-family: "Arial", "Hiragino Sans GB", "Microsoft YaHei", \5fae\8f6f\96c5\9ed1, "Helvetica", "sans-serif";
+         }
+        
+        
+        
+        #middle{
+            padding-top: 75px;
+        }
+        .container1{
+            min-height: 100vh;
+            background-color: rgba(247,247,247,1);
+        }
+        .container2{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .container3{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 1200px;
+    margin-bottom: 12px;
+    position: relative;
+        }
+/*左边导航栏*/
+        .leftNav{
+            box-sizing: border-box;
+            display: flex;
+            flex-flow: column nowrap;
+            width: 200px;
+            height: 360px;
+            padding: 10px 0;
+            border-radius: 4px;
+            background-color: white;
+            position: absolute;
+            left: 0;
+            z-index: 9;
+            transition-property:height;
+            transition-duration: .5s;
+            
+            
+        }
+/*中间部分*/        
+        #midPic {
+            position: relative;
+            width: 776px;
+            height: 360px;
+            border-radius: 4px;
+            left: 212px;
+            overflow:hidden;
+}
+/*右边部分 呈现用户的基本信息 头像、等级、身份等 
+        具体呈现页面跳转
+*/
+        .user {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 200px;
+    height: 360px;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+}
+        .web-material-title {
+    color: #333;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 13px;
+}
+        .web-material-inner{
+            position: relative;
+            width: 1200px;
+            overflow: hidden;
+        }
+        #web-material{
+            background-color: white;
+        }
+        #subject{
+          font-size:18px;
+          font-weight:500;
+        }
+        #else{
+        font-size:16px;
+        color:gray;
+        font-weight:400;
+        }
+        #solution,#analysis{
+        font-size:16px;
+        font-weight:500;
+        }
+        
+        #footer{
+            margin-top: 20px;
+        }
+        #footer-inner{
+            text-align: center;
+            font-size: 12px;
+        }
+        .nav:hover{
+            color: deepskyblue;
+        }
+        .chapter{
+            line-height: 34px;
+            box-sizing: border-box;
+            width: 200px;
+            height: 34px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            transition-property:background-color;
+            transition-duration: .2s;
+            transition-timing-function: ease-out;
+        }
+        .leftNav>div:nth-of-type(n+2):hover{
+            background-color: aliceblue;
+        }
+        .headline{
+            font-size: 14px;
+            margin-left: 8px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        .title{
+            font-size: 20px;
+        }
+        .subtitle{
+            margin-left: 8px;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 17px;
+            cursor: pointer;
+        }
+        .headline>a{
+            color: black;
+        }
+        .subtitle>a{
+            color: gray;
+        }
+        .headline a:hover,.subtitle a:hover{
+            text-decoration: underline;
+            color:deepskyblue; 
+        }
+        #canvas{
+            margin-left: 40%;
+            transition-property: all;
+            transition-delay: .5s;
+            transition-duration: .5s;
+            transition-timing-function:ease-in-out;
+            
+        }
+        
+        
+        .slide{
+		width:776px;
+		height:360px;
+		position:absolute;
+	}
+        #hello{
+            text-align: center;
+        }
